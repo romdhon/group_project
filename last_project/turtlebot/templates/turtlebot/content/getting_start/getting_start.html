@@ -1,0 +1,77 @@
+{% extends 'turtlebot/base.html'%}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/content.css' %}">
+    <div class="container">
+        
+        <div class="content-topic">
+            <h1>{{ msg }}</h1>
+        </div>
+
+
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left link-button" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Overview
+                        </button>
+                    </h2>
+                </div>
+        
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <a class="link-button" href="">First</a>
+                        <hr>
+                        <a class="link-button" href="">Second</a>
+                        <hr>
+                        <a class="link-button" href="">Third</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left collapsed link-button" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Getting Started
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <a class="link-button" href="">First</a>
+                        <hr>
+                        <a class="link-button" href="">Second</a>
+                        <hr>
+                        <a class="link-button" href="">Third</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left collapsed link-button" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Setup
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <a class="link-button" href="">First</a>
+                        <hr>
+                        <a class="link-button" href="">Second</a>
+                        <hr>
+                        <a class="link-button" href="">Third</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+{% endblock %}
